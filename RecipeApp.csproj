@@ -63,8 +63,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="EventArgs\RecipeEventArgs.cs" />
-    <Compile Include="EventArgs\RecipesEventArgs.cs" />
+    <Compile Include="Events\RecipeEventArgs.cs" />
+    <Compile Include="Events\RecipesEventArgs.cs" />
     <Compile Include="Import\LineType.cs" />
     <Compile Include="Model\RecipeItem.cs" />
     <Compile Include="Model\CategoryItem.cs" />

@@ -1,5 +1,6 @@
-﻿using RecipeApp.EventArgs;
+﻿using RecipeApp.Events;
 using RecipeApp.Utilities;
+using System;
 using System.IO;
 using System.Windows;
 
@@ -19,6 +20,8 @@ namespace RecipeApp.UI
             this.ucRecipeList.RecipeSelected += RecipeSelectedHandler;
 
             this.ucMenu.RecipesImported += RecipesImportedHandler;
+            this.ucMenu.EditModeSelected += EditModeSelectedHandler;
+            this.ucMenu.ViewModeSelected += ViewModeSelectedHandler;
 
             // Load list of Transforms from Transforms dir and send to ViewRecipeUserControl
         }
@@ -37,6 +40,18 @@ namespace RecipeApp.UI
             }
 
             this.ucRecipeList.AddRecipes(e.Recipes);
+        }
+
+        void EditModeSelectedHandler(object sender, EventArgs e)
+        {
+            this.ucViewRecipe.Visibility = Visibility.Hidden;
+            this.ucEditRecipe.Visibility = Visibility.Visible;
+        }
+
+        void ViewModeSelectedHandler(object sender, EventArgs e)
+        {
+            this.ucViewRecipe.Visibility = Visibility.Visible;
+            this.ucEditRecipe.Visibility = Visibility.Hidden;
         }
     }
 }

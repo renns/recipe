@@ -1,42 +1,54 @@
-﻿Transforms:
-	Default.xslt
-	PrintFull.xslt
-	PrintIndex.xslt
+﻿# Transforms
 
-Recipe Manager:
-Collections
-	List of collections
-	-------
-	Modify Collections
-Import
-	OneTsp
-Edit Mode (Toggle Button)
-Print
+- Default.xslt
+- PrintFull.xslt
+- PrintIndex.xslt
 
 
-Left:
-Search textbox
-Tree view
-	Categories
-		Recipe titles
+# Menu
 
-Right:
-Display view
-Edit view
+- Collections
+	- List of collections
+	- -------
+	- Modify Collections
+- Import
+	- OneTsp
+- Edit Mode (Toggle Button)
+- Print
 
-Display view:
-Dropdown
-	List of Transforms
-HTML view of recipe based on selected transform
 
-Edit view:
-Editable textboxes for all elements
-Save button
+# Display view
 
-Separator between left and right is a resizer
+- Transforms Dropdown
+- HTML view of recipe based on selected transform
 
-Keep track of window size and resizer and restore previous setting on load
 
-Ability to set default template
+# Edit view
 
-Import from other collections
+- Editable textboxes for all elements
+- Save button
+
+
+# Other
+- Keep track of window size and resizer and restore previous setting on load
+- Export to another collection)
+
+
+Title
+Description
+Author
+SourceUri
+ImageUri
+Yield
+PreparationTime
+CookingTime
+TotalTime
+Ingredients
+	Section title
+	List of ingredients
+Directions
+	Section title
+	List of directions
+Notes
+Categories
+Tags

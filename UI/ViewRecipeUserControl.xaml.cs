@@ -16,6 +16,7 @@ namespace RecipeApp.UI
         {
             InitializeComponent();
 
+            // TODO: Move this out of the constructor so that it can render in design view
             using (var fs = File.OpenRead(Path.Combine(FileSystem.TransformsDirectory, "Default.xslt")))
             {
                 this.transform = new XPathDocument(fs);

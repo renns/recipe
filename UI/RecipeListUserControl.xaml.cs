@@ -1,4 +1,4 @@
-﻿using RecipeApp.EventArgs;
+﻿using RecipeApp.Events;
 using RecipeApp.Model;
 using System;
 using System.Collections.Generic;

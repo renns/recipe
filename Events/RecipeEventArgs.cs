@@ -1,8 +1,9 @@
 ﻿using RecipeApp.Model;
+using System;
 
-namespace RecipeApp.EventArgs
+namespace RecipeApp.Events
 {
-    public class RecipeEventArgs : System.EventArgs
+    public class RecipeEventArgs : EventArgs
     {
         public RecipeEventArgs(Recipe recipe)
         {

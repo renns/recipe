@@ -1,9 +1,10 @@
 ﻿using RecipeApp.Model;
+using System;
 using System.Collections.Generic;
 
-namespace RecipeApp.EventArgs
+namespace RecipeApp.Events
 {
-    public class RecipesEventArgs : System.EventArgs
+    public class RecipesEventArgs : EventArgs
     {
         public RecipesEventArgs(IEnumerable<Recipe> recipes)
         {
